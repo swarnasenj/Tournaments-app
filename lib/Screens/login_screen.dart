@@ -187,13 +187,14 @@ class _LoginScreenState extends State<LoginScreen> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          const Divider(
-                            color: Colors.white,                           
-                            height: 20,
-                            thickness: 20,
-                            
-                           
+                          Container(
+                            color: const Color(0xff2B2C31),
+                            height: 2,
+                            width: 110,
                           ),
+                           const SizedBox(
+                        width: 5,
+                      ),
                           Container(
                             alignment: Alignment.center,
                             child: const Text(
@@ -204,26 +205,35 @@ class _LoginScreenState extends State<LoginScreen> {
                               ),
                             ),
                           ),
-                          const Divider(
-                            color: Colors.green,                           
-                            height: 20,
-                            thickness: 1.9,
-                                                                                 
+                           const SizedBox(
+                        width: 5,
+                      ),
+                          Container(
+                            color: const Color(0xff2B2C31),
+                            height: 2,
+                            width: 110,
                           ),
                         ],
                       ),
-                      const SizedBox(height: 5,),
+                      const SizedBox(
+                        height: 5,
+                      ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          
-                          const Icon(Icons.facebook_rounded,color: Colors.blue,),
-                          const SizedBox(width: 10,),
+                          const Icon(
+                            Icons.facebook_rounded,
+                            color: Colors.blue,
+                          ),
+                          const SizedBox(
+                            width: 10,
+                          ),
                           Container(
                             height: 25,
                             width: 30,
-                            child: Image.asset('assets/images/gmail.png',
-                          ),
+                            child: Image.asset(
+                              'assets/images/gmail.png',
+                            ),
                           )
                         ],
                       ),
