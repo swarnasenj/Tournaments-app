@@ -184,20 +184,47 @@ class _LoginScreenState extends State<LoginScreen> {
                       const SizedBox(
                         height: 5,
                       ),
-                      Container(
-                        alignment: Alignment.center,
-                        child: const Text(
-                          'Or Log In With',
-                          style: TextStyle(
-                            color: Color(0xffD2D3D4),
-                            fontSize: 14,
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          const Divider(
+                            color: Colors.white,                           
+                            height: 20,
+                            thickness: 20,
+                            
+                           
                           ),
-                        ),
+                          Container(
+                            alignment: Alignment.center,
+                            child: const Text(
+                              'Or Log In With',
+                              style: TextStyle(
+                                color: Color(0xffD2D3D4),
+                                fontSize: 14,
+                              ),
+                            ),
+                          ),
+                          const Divider(
+                            color: Colors.green,                           
+                            height: 20,
+                            thickness: 1.9,
+                                                                                 
+                          ),
+                        ],
                       ),
+                      const SizedBox(height: 5,),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           
+                          const Icon(Icons.facebook_rounded,color: Colors.blue,),
+                          const SizedBox(width: 10,),
+                          Container(
+                            height: 25,
+                            width: 30,
+                            child: Image.asset('assets/images/gmail.png',
+                          ),
+                          )
                         ],
                       ),
                     ],
